@@ -1,0 +1,124 @@
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/variables";
+@import "./base/mixins";
+@import "../node_modules/basiclightbox/src/styles/main.scss";
+body {
+  //background-color: greenyellow;
+}
+header {
+  background-color: #90ac6c;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 5px 5px 5px rgba(219, 139, 139, 0.57);
+  letter-spacing: 1px;
+  font-size: 115px;
+  margin-bottom: 110px;
+}
+// .zone1 {
+//   margin: 0 auto;
+//   background-color: rgb(174, 174, 230);
+// }
+.menu {
+  display: flex;
+  // background-color: rgb(201, 198, 198);
+  .listHolder {
+    //background-color: rgb(224, 209, 209);
+    margin: 0 auto;
+    // background-color: red;
+    width: 80%;
+    height: 550px;
+    // h1 {
+    //   text-align: center;
+    //   line-height: 100px;
+    //   text-shadow: 5px 5px 5px rgba(117, 102, 102, 0.57);
+    //   letter-spacing: 1px;
+    //   font-size: 30px;
+    //   margin-bottom: 30px;
+    // }
+  }
+  .listitem {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list {
+    margin-bottom: 30px;
+    // display: flex;
+  }
+  // .side {
+  //   // background-color: blue;
+  //   width: 20%;
+  //   // h2 {
+  //   //   text-align: center;
+  //   //   line-height: 100px;
+  //   //   text-shadow: 5px 5px 5px rgba(117, 102, 102, 0.57);
+  //   //   letter-spacing: 1px;
+  //   //   font-size: 23px;
+  //   // }
+  // }
+}
+.list {
+  //background-color: lightgreen;
+}
+.page {
+  display: flex;
+  justify-content: space-between;
+  background: #90ac6c;
+  .prev {
+    width: 120px;
+    height: 50px;
+    background-color: #acda71;
+  }
+  .next {
+    width: 120px;
+    height: 50px;
+    background-color: #acda71;
+  }
+}
+.list__item__image {
+  width: 25%;
+  height: 200px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  margin-right: 20px;
+  // position: relative;
+}
+h2 {
+  // position: absolute;
+  // left: 700px;
+  color: rgb(3, 69, 155);
+  font-size: 30px;
+}
+.loader {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "\e834";
+    font-family: "icons";
+    left: 45%;
+    top: 45%;
+    font-size: 200px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 25px;
+  }
+  .loader {
+    &::before {
+      font-size: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .loader {
+    &::before {
+      font-size: 60px;
+    }
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
